@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="MMS(SWD_6) KaungSithu's Dice_Game Project"/>
+        <meta name="keywords" content="mms, mms it, swd 6, best it service, dice game,dice"/>
+        <meta name="author" content="MMS Developer Team"/>
+        <!-- Facebook and Twitter integration -->
+        <meta property="og:title" content="MMS(SWD_6) KaungSithu's Dice_Game Project"/>
+        <meta property="og:image" content="dice-game-min.jpg"/>
+        <meta property="og:url" content="http://kaungsithu.mmsit.website/dice_game/"/>
+        <meta property="og:site_name" content="Dice_Game"/>
+        <meta property="og:description" content="MMS(SWD-6) Kaung Sithu's Dice_Game"/>
+
+        <link href="https://fonts.googleapis.com/css?family=Electrolize&display=swap" rel="stylesheet">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="dice-icon.png">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendor/animate_it/animate.css">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <title>Dice Game</title>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row" id="bob">
+                <div class="col-12 d-flex align-items-center justify-content-center w-100 vh-100" >
+                    <div class="winner-show text-white d-flex flex-column">
+                        <h1 class="winner-text p-3 d-none text-center"></h1>
+                        <button class="btn-new winner-new d-none" id="winner-new">ကစားပွဲ အသစ်စရန်</button>
+                    </div>
+                    <div class="alert alert-danger alert-text d-none" role="alert" style="z-index: 100;" id="alert-box"></div>
+                    <div class="wrapper clearfix">
+                        <div class="player-0-panel active">
+                            <div class="player-name" id="name-0">Player One</div>
+                            <div class="player-score" id="score-0">0</div>
+                            <div class="player-current-box">
+                                <div class="player-current-label">လက်ရှိအမှတ်</div>
+                                <div class="player-current-score" id="current-0">0</div>
+                            </div>
+                        </div>
+
+                        <div class="player-1-panel">
+                            <div class="player-name" id="name-1">Player Two</div>
+                            <div class="player-score" id="score-1">0</div>
+                            <div class="player-current-box">
+                                <div class="player-current-label">လက်ရှိအမှတ်</div>
+                                <div class="player-current-score" id="current-1">0</div>
+                            </div>
+                        </div>
+                        <button class="btn-name"><i class="ion-ios-plus-outline"></i>နမည်‌ပြောင်းရန်</button>
+                        <button class="btn-new" id="btn-new"><i class="ion-ios-plus-outline"></i>ကစားပွဲအသစ်စရန်</button>
+                        <button class="btn-roll"><i class="ion-ios-loop "></i>အံစာ လှိမ့်မယ်</button>
+                        <button class="btn-hold"><i class="ion-ios-download-outline "></i>အမှတ် သိမ်းမယ်</button>
+                        <input type="text" class="score-input rounded-pill" id="score-input" placeholder="Wining Score">
+                        <img src="dice-5.png" alt="Dice" class="dice" id="dice-1">
+                        <img src="dice-5.png" alt="Dice" class="dice" id="dice-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="vendor/wow/wow.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
